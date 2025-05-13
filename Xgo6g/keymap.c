@@ -284,13 +284,21 @@ tap_dance_action_t tap_dance_actions[] = {
 };
 
 
+// clang-format off
+// QMK Config
+#ifdef CHORDAL_HOLD
+    // Handedness for Chordal Hold.
+    const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM = LAYOUT_voyager(
+        '*', '*', '*', '*', '*', '*',
+        '*', 'L', 'L', 'L', 'L', 'L',
+        '*', 'L', 'L', 'L', 'L', 'L',
+        '*', 'L', 'L', 'L', 'L', 'L',
+        '*', '*',
 
-// Custom
-const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
-    LAYOUT_LR(
-        'L', 'L', 'L', 'L', 'L', 'L',  'R', 'R', 'R', 'R', 'R', 'R', 
-        'L', 'L', 'L', 'L', 'L', 'L',  'R', 'R', 'R', 'R', 'R', 'R', 
-        'L', 'L', 'L', 'L', 'L', 'L',  'R', 'R', 'R', 'R', 'R', 'R', 
-        'L', 'L', 'L', 'L', 'L', 'L',  'R', 'R', 'R', 'R', 'R', 'R', 
-                            '*', '*',  '*', '*',
-    );
+        '*', '*', '*', '*', '*', '*',
+        'R', 'R', 'R', 'R', 'R', '*',
+        'R', 'R', 'R', 'R', 'R', '*',
+        'R', 'R', 'R', 'R', 'R', '*',
+        '*', '*');
+#endif // CHORDAL_HOLD
+// clang-format on
