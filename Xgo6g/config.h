@@ -6,7 +6,7 @@
 #define AUTO_SHIFT_TIMEOUT 160
 #define NO_AUTO_SHIFT_TAB
 #define NO_AUTO_SHIFT_ALPHA
-#define SERIAL_NUMBER "Xgo6g/qm9r9V"
+#define SERIAL_NUMBER "Xgo6g/40DE7Q"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 12
 
